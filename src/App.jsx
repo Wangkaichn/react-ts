@@ -6,7 +6,7 @@ import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom'
 
 import { createBrowserHistory } from 'history'
-import router from './router/index.jsx'
+import router from './router/index'
 
 const { Header, Content, Footer } = Layout
 const history = createBrowserHistory()

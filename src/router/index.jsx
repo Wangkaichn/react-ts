@@ -1,9 +1,9 @@
 import { Switch, Route } from 'react-router-dom'
 import React from 'react'
 
-import Help from '../layout/Help/index.jsx'
-import Base from '../layout/Base/index.jsx'
-import Test from '../layout/Test/index.jsx'
+import Help from '../layout/Help'
+import Base from '../layout/Base'
+import Test from '../layout/Test'
 
 const router = () => {
   return (

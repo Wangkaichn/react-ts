@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Button } from 'antd'
     
-import TestChange from '../../reduxs/action/test.js'
+import TestChange from '../../reduxs/action/test'
 import styles from './index.module.less'
 
 

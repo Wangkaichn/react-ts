@@ -68,4 +68,7 @@ module.exports = {
     // 千万注意, publicPath 设置
     publicPath: '/'
   },
+  resolve: {
+    extensions: ['.js', '.jsx','.ts', 'tsx'],
+  },
 }
