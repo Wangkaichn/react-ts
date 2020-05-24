@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
-import styles from './index.module.less'
 import { connect } from 'react-redux'
-import TestChange from './reduxs/action/test.js'
+import { Link } from 'react-router-dom'
 import { Button } from 'antd'
+    
+import TestChange from '../../reduxs/action/test.js'
+import styles from './index.module.less'
+
 
 const Test = (props) => {
   useEffect(() => {
@@ -14,10 +17,9 @@ const Test = (props) => {
     <>
       <span className='test'>1111111111</span>
       <span className={styles.test}>22222222222</span>
-      <Button type="primary">Primary</Button>
-      <Button>Default</Button>
-      <Button type="dashed">Dashed</Button>
-      <Button type="link">Link</Button>
+      <Button type="primary">
+        <Link to="/help"/>
+      </Button>
     </>
   )
 }
@@ -25,8 +27,6 @@ const Test = (props) => {
 const MapState = (state) => ({
   test: state.test,
 })
-
-//const MapDispatch = null
 const MapDispatch = {
   change: TestChange
 }
