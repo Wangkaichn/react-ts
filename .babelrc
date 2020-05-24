@@ -1,0 +1,11 @@
+{
+  "presets": [
+    //es6 --> es5,
+    ["@babel/preset-env", {
+      "useBuiltIns": "usage"
+    }],
+    // react --> js
+    "@babel/preset-react"
+  ],
+  "plugins": ["react-hot-loader/babel"]
+}
